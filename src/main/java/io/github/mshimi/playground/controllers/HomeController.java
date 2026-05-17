@@ -22,8 +22,9 @@ public class HomeController {
      */
     @PostMapping("/test/server-toast")
     @ResponseBody
-    public String serverToast(HttpServletResponse response) {
+    public String serverToast(HttpServletResponse response) throws InterruptedException {
         JteuiHtmx.success(response, "Toast fired from the server!");
+        Thread.sleep(5000); // 5 seconds delay
         return "";
     }
 }

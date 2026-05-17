@@ -7,6 +7,8 @@
 @param List<ButtonProps> withIcons
 @param ButtonProps linkButton
 
+@param ButtonProps  serverSide
+
 @template.layout(
 currentPath = "/components/button",
 pageTitle = "Button — jteui",
@@ -70,6 +72,13 @@ content = @`
         <h2 class="text-lg font-semibold text-gray-900 mb-4">As a link (renders as &lt;a&gt;)</h2>
         <div class="p-6 bg-white rounded-lg border border-gray-200">
             @template.jteui.components.button.button(props = linkButton)
+        </div>
+    </section>
+
+    <section class="mb-10">
+        <h2 class="text-lg font-semibold text-gray-900 mb-4">As a link (renders as &lt;a&gt;)</h2>
+        <div class="p-6 bg-white rounded-lg border border-gray-200">
+            @template.jteui.components.button.button(props = serverSide)
         </div>
     </section>
 

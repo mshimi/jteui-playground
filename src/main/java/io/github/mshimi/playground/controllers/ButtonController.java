@@ -1,8 +1,10 @@
 package io.github.mshimi.playground.controllers;
 
+import io.github.mshimi.jteui.base.Action;
 import io.github.mshimi.jteui.base.Size;
 import io.github.mshimi.jteui.base.Variant;
 import io.github.mshimi.jteui.components.button.ButtonProps;
+import io.github.mshimi.jteui.htmx.HtmxSwap;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -54,6 +56,19 @@ public class ButtonController {
         model.addAttribute("linkButton",
                 new ButtonProps().label("Go to Google").href("https://google.com").variant(Variant.LINK)
         );
+
+
+        // Link button (renders as <a>)
+        model.addAttribute("serverSide",
+                new ButtonProps()
+                        .label("Server-side toast")
+                        .variant(Variant.PRIMARY)
+                        .applyAction(Action.create()
+                                .hxPost("/test/server-toast")
+                                .hxSwap(HtmxSwap.NONE))
+                        .loadingOnAction(true)
+        );
+
 
         return "pages/button";
     }
