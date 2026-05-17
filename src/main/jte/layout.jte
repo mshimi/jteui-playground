@@ -12,6 +12,7 @@
         new String[]{"Button", "/components/button"},
         new String[]{"Badge", "/components/badge"},
         new String[]{"Card", "/components/card"},
+        new String[]{"Divider", "/components/divider"},
         new String[]{"Alert", "/components/alert"},
         new String[]{"Modal", "/components/modal"},
         new String[]{"ConfirmModal", "/components/confirm-modal"},

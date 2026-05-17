@@ -6,6 +6,7 @@
         new String[]{"Button", "Primary actions and CTAs", "/components/button"},
         new String[]{"Badge", "Compact labels and status indicators", "/components/badge"},
         new String[]{"Card", "Content containers with header, body, footer", "/components/card"},
+        new String[]{"Divider", "Horizontal or vertical separator", "/components/divider"},
         new String[]{"Alert", "Inline contextual messages", "/components/alert"},
         new String[]{"Modal", "Dialog overlays for focused interactions", "/components/modal"},
         new String[]{"ConfirmModal", "Confirmation dialogs for destructive actions", "/components/confirm-modal"},
