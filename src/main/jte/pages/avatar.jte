@@ -1,3 +1,4 @@
+@import io.github.mshimi.jteui.components.avatar.AvatarGroupProps
 @import io.github.mshimi.jteui.components.avatar.AvatarProps
 @import java.util.List
 
@@ -7,6 +8,8 @@
 @param List<AvatarProps> shapes
 @param List<AvatarProps> withStatus
 @param AvatarProps imageWithStatus
+@param AvatarGroupProps group
+@param AvatarGroupProps groupWithOverflow
 
 @template.layout(
 currentPath = "/components/avatar",
@@ -75,6 +78,22 @@ content = @`
                     @template.jteui.components.avatar.avatar(props = a)
                 @endfor
             </div>
+        </div>
+    </section>
+
+    <section class="mb-10">
+        <h2 class="text-lg font-semibold text-gray-900 mb-4">Group</h2>
+        <p class="text-sm text-gray-500 mb-3">Overlapping avatars with a white ring separating each.</p>
+        <div class="p-6 bg-white rounded-lg border border-gray-200">
+            @template.jteui.components.avatar.avatarGroup(props = group)
+        </div>
+    </section>
+
+    <section class="mb-10">
+        <h2 class="text-lg font-semibold text-gray-900 mb-4">Group with overflow</h2>
+        <p class="text-sm text-gray-500 mb-3">When more avatars exist than {@code max}, a "+N" bubble appears.</p>
+        <div class="p-6 bg-white rounded-lg border border-gray-200">
+            @template.jteui.components.avatar.avatarGroup(props = groupWithOverflow)
         </div>
     </section>
 

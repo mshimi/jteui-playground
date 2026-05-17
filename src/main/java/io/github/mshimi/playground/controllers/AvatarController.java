@@ -2,6 +2,7 @@ package io.github.mshimi.playground.controllers;
 
 import io.github.mshimi.jteui.base.Size;
 import io.github.mshimi.jteui.base.Variant;
+import io.github.mshimi.jteui.components.avatar.AvatarGroupProps;
 import io.github.mshimi.jteui.components.avatar.AvatarProps;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -56,6 +57,29 @@ public class AvatarController {
                         .size(Size.LG)
                         .showStatus(true)
                         .statusVariant(Variant.SUCCESS));
+
+        model.addAttribute("group", new AvatarGroupProps()
+                .size(Size.MD)
+                .avatars(List.of(
+                        new AvatarProps().src("https://picsum.photos/seed/alice/100/100").alt("Alice").size(Size.MD),
+                        new AvatarProps().src("https://picsum.photos/seed/bob/100/100").alt("Bob").size(Size.MD),
+                        new AvatarProps().fallback("CK").size(Size.MD),
+                        new AvatarProps().src("https://picsum.photos/seed/dave/100/100").alt("Dave").size(Size.MD),
+                        new AvatarProps().fallback("EL").size(Size.MD)
+                )));
+
+        model.addAttribute("groupWithOverflow", new AvatarGroupProps()
+                .size(Size.MD)
+                .max(4)
+                .avatars(List.of(
+                        new AvatarProps().src("https://picsum.photos/seed/alice/100/100").alt("Alice").size(Size.MD),
+                        new AvatarProps().src("https://picsum.photos/seed/bob/100/100").alt("Bob").size(Size.MD),
+                        new AvatarProps().fallback("CK").size(Size.MD),
+                        new AvatarProps().src("https://picsum.photos/seed/dave/100/100").alt("Dave").size(Size.MD),
+                        new AvatarProps().fallback("EL").size(Size.MD),
+                        new AvatarProps().fallback("FM").size(Size.MD),
+                        new AvatarProps().fallback("GN").size(Size.MD)
+                )));
 
         return "pages/avatar";
     }
