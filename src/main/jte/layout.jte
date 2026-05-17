@@ -14,6 +14,7 @@
         new String[]{"Card", "/components/card"},
         new String[]{"Divider", "/components/divider"},
         new String[]{"Alert", "/components/alert"},
+        new String[]{"Avatar", "/components/avatar"},
         new String[]{"Modal", "/components/modal"},
         new String[]{"ConfirmModal", "/components/confirm-modal"},
         new String[]{"Toast", "/components/toast"},

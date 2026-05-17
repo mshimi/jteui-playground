@@ -8,6 +8,7 @@
         new String[]{"Card", "Content containers with header, body, footer", "/components/card"},
         new String[]{"Divider", "Horizontal or vertical separator", "/components/divider"},
         new String[]{"Alert", "Inline contextual messages", "/components/alert"},
+        new String[]{"Avatar", "User image with initials fallback", "/components/avatar"},
         new String[]{"Modal", "Dialog overlays for focused interactions", "/components/modal"},
         new String[]{"ConfirmModal", "Confirmation dialogs for destructive actions", "/components/confirm-modal"},
         new String[]{"Toast", "Transient notifications, Alpine & HTMX driven", "/components/toast"},
