@@ -18,7 +18,9 @@
         new String[]{"Modal", "/components/modal"},
         new String[]{"ConfirmModal", "/components/confirm-modal"},
         new String[]{"Toast", "/components/toast"},
-        new String[]{"Input", "/components/input"}
+        new String[]{"Input", "/components/input"},
+        new String[]{"Form", "/components/form"},
+        new String[]{"Form in Modal", "/components/form-in-modal"}
     );
 }
 
@@ -36,6 +38,7 @@
 @template.jteui.provider(
 withModal = true,
 withToast = true,
+withForm = true,
 loadAlpine = true,
 content = @`
     <div class="flex min-h-screen">

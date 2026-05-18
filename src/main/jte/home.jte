@@ -12,7 +12,9 @@
         new String[]{"Modal", "Dialog overlays for focused interactions", "/components/modal"},
         new String[]{"ConfirmModal", "Confirmation dialogs for destructive actions", "/components/confirm-modal"},
         new String[]{"Toast", "Transient notifications, Alpine & HTMX driven", "/components/toast"},
-        new String[]{"Input", "Form input with validation states", "/components/input"}
+        new String[]{"Input", "Form input with validation states", "/components/input"},
+        new String[]{"Form", "HTMX form with client-side validation and server error mapping", "/components/form"},
+        new String[]{"Form in Modal", "Edit profile in a modal, page updates on success", "/components/form-in-modal"}
     );
 }
 
