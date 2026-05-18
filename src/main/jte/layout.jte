@@ -20,7 +20,8 @@
         new String[]{"Toast", "/components/toast"},
         new String[]{"Input", "/components/input"},
         new String[]{"Form", "/components/form"},
-        new String[]{"Form in Modal", "/components/form-in-modal"}
+        new String[]{"Form in Modal", "/components/form-in-modal"},
+        new String[]{"Dropdown", "/components/dropdown"}
     );
 }
 
@@ -39,6 +40,7 @@
 withModal = true,
 withToast = true,
 withForm = true,
+withDropdown = true,
 loadAlpine = true,
 content = @`
     <div class="flex min-h-screen">

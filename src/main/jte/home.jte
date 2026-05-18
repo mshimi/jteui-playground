@@ -14,7 +14,8 @@
         new String[]{"Toast", "Transient notifications, Alpine & HTMX driven", "/components/toast"},
         new String[]{"Input", "Form input with validation states", "/components/input"},
         new String[]{"Form", "HTMX form with client-side validation and server error mapping", "/components/form"},
-        new String[]{"Form in Modal", "Edit profile in a modal, page updates on success", "/components/form-in-modal"}
+        new String[]{"Form in Modal", "Edit profile in a modal, page updates on success", "/components/form-in-modal"},
+        new String[]{"Dropdown", "Flexible menus with Floating UI, keyboard nav, async fetch", "/components/dropdown"}
     );
 }
 
